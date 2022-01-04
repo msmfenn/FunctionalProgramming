@@ -1,8 +1,8 @@
-isPossibleToMade x y
+isPossibleToMake x y
   | x <= y = "It is possible to make"
   | otherwise = "The materials are not enough"
 
-isPossibleToMade1 x y =
+isPossibleToMake1 x y =
   if x <= y
     then "It is possible to make"
     else "The materials are not enough"
@@ -21,5 +21,5 @@ main = do
   let totalAreas = zipWith (*) aroundAreas tankCounts
   let totalArea = sum totalAreas
   print totalArea
-  print (isPossibleToMade totalArea materials)
-  print (isPossibleToMade1 totalArea materials) -- alternatively
+  print (isPossibleToMake totalArea materials)
+  print (isPossibleToMake1 totalArea materials) -- alternatively
